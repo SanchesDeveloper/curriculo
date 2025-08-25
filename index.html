@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Currículo - Paulo Sanches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apresentação -->
+        <section id="sobre">
+            <article>
+                <h1>Paulo Sanches</h1>
+                <img src="assets/foto.jpg" alt="Foto de perfil" class="perfil">
+                <p>Olá! Sou desenvolvedor web de Videira, apaixonado por tecnologia, programação e soluções digitais. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos.</p>
+                <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+            </article>
+        </section>
+
+        <!-- Habilidades com Canvas -->
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <canvas id="skillsChart" width="500" height="400"></canvas>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React e Angular</li>
+                <li>Banco de Dados SQL</li>
+                <li>Gestão de Projetos</li>
+            </ul>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <h2>Projetos Recentes</h2>
+            <div class="projetos-container">
+                <article class="card">
+                    <h3>Site Político</h3>
+                    <p>Desenvolvimento de site institucional para campanha política.</p>
+                </article>
+                <article class="card">
+                    <h3>Sistema de Clínica</h3>
+                    <p>Aplicação web para gerenciamento de consultas e pacientes.</p>
+                </article>
+                <article class="card">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Meu site pessoal com projetos e contato.</p>
+                </article>
+            </div>
+            <button id="toggleProjetos">Mostrar/Ocultar Projetos</button>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Ou me encontre em: 
+                <a href="mailto:sanchespaulo55@gmail.com">Email</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por Paulo Sanches</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
